@@ -3,9 +3,8 @@ const links = document.querySelectorAll('.nav-link')
 links.forEach(link => {
   link.addEventListener('click', (event) => {
     event.stopPropagation();
-    console.log('stopped!')
-      link.style.color = 'blue'
-        event.preventDefault();
+     link.style.color = 'blue'
+      event.preventDefault();
 
   })
 })
@@ -134,7 +133,5 @@ gsap.registerEffect({
         return gsap.to(targets, {duration: config.duration, opacity: 1, scale: 1, translateY: 100, });
     }
 });
-
-
 
 gsap.effects.grow(".btn");
